@@ -15,6 +15,7 @@ namespace ConsoleApp1
             netPrice = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(netPrice);
             int TVA = netPrice * 19 / 100;
+            Console.WriteLine("your taxes amount to " + TVA);
             int productPrice = netPrice + TVA;
             Console.WriteLine("the price of " + productName + " is " + productPrice);
         }
