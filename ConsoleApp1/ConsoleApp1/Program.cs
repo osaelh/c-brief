@@ -6,7 +6,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string productName;
+            int netPrice;
+            Console.WriteLine("enter product name");
+            productName = Console.ReadLine();
+            Console.WriteLine(productName);
+            Console.WriteLine("enter product price");
+            netPrice = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(netPrice);
+            int TVA = netPrice * 19 / 100;
+            int productPrice = netPrice + TVA;
+            Console.WriteLine("the price of " + productName + " is " + productPrice);
         }
     }
 }
