@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace ConsoleApp1
 {
@@ -11,7 +12,7 @@ namespace ConsoleApp1
             Console.WriteLine("enter product name");
             productName = Console.ReadLine();
             Console.WriteLine(productName);
-            Console.WriteLine("enter product price");
+            Console.WriteLine("product price");
             netPrice = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(netPrice);
             int TVA = netPrice * 19 / 100;
